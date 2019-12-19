@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ServiceableAppDelegate_Example' do
+  pod 'ServiceableAppDelegate', :path => '../'
+
+  target 'ServiceableAppDelegate_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
