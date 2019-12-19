@@ -1,0 +1,6 @@
+framework module ServiceableAppDelegate {
+  umbrella header "ServiceableAppDelegate-umbrella.h"
+
+  export *
+  module * { export * }
+}

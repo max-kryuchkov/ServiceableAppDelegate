@@ -1,0 +1,16 @@
+PODS:
+  - ServiceableAppDelegate (0.1.0)
+
+DEPENDENCIES:
+  - ServiceableAppDelegate (from `../`)
+
+EXTERNAL SOURCES:
+  ServiceableAppDelegate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ServiceableAppDelegate: dae7089c7d67d7d4cd608488429f4e8a898c39fc
+
+PODFILE CHECKSUM: 74828738dc983a2b6a40c6565c460b86585cfc85
+
+COCOAPODS: 1.8.4

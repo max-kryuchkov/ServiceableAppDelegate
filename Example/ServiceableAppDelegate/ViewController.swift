@@ -9,16 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    private let vcKey = "vc_key"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        App.lifecycleInteractor.addOutput(self, forKey: vcKey)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    deinit {
+        App.lifecycleInteractor.removeOutput(forKey: vcKey)
     }
-
 }
 
+// MARK: - Timer behaviour when app enter background
+
+extension ViewController: LifecycleInteractorOutput {
+    
+    public func applicationDidEnterBackground(_ application: UIApplication) {
+        print("App did enter background")
+    }
+    
+    public func applicationWillEnterForeground(_ application: UIApplication) {
+        print("App will enter foreground")
+    }
+}

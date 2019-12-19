@@ -1,0 +1,6 @@
+framework module Pods_ServiceableAppDelegate_Example {
+  umbrella header "Pods-ServiceableAppDelegate_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

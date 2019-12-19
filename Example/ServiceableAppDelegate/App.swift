@@ -6,4 +6,9 @@
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
-import Foundation
+import ServiceableAppDelegate
+
+struct App {
+    
+    static let lifecycleInteractor = LifecycleInteractor()
+}
